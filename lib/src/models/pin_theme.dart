@@ -37,11 +37,15 @@ class PinTheme {
   /// this defines the shape of the input fields. Default is underlined
   final PinCodeFieldShape shape;
 
+  /// this defines the padding of each enclosing container of an input field. Default is [0.0]
+  final EdgeInsetsGeometry fieldOuterPadding;
+
   const PinTheme.defaults({
     this.borderRadius = BorderRadius.zero,
     this.fieldHeight = 50,
     this.fieldWidth = 40,
     this.borderWidth = 2,
+    this.fieldOuterPadding = EdgeInsets.zero,
     this.shape = PinCodeFieldShape.underline,
     this.activeColor = Colors.green,
     this.selectedColor = Colors.blue,
